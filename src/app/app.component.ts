@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-
+import countries from './files/countries.json';
+ 
+ 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'read-local-json-angular';
+  title = 'json-file-read-angular';
+  public countryList:{name:string, code:string}[] = countries;
 }
